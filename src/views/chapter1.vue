@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: changqing
  * @Date: 2021-09-03 14:52:22
- * @LastEditTime: 2021-09-03 16:45:45
+ * @LastEditTime: 2021-09-05 17:03:33
  * @LastEditors: changqing
  * @Usage: 
 -->
@@ -30,11 +30,11 @@ export default defineComponent({
   data: function () {
     return {
       name: "chapter1",
-      list: ["01-HelloWorld"],
+      list: ["01-HelloWorld", "17-ES2015-ES6-Modules"],
     };
   },
   methods: {
-    handle(item) {
+    handle(item: string) {
       require(`@/examples/${this.name}/${item}.js`);
     },
   },
